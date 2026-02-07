@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>DNSSettings</key>
+			<dict>
+				<key>DNSProtocol</key>
+				<string>TLS</string>
+				<key>ServerAddresses</key>
+				<array>
+					<string>2a07:e340::5</string>
+					<string>194.242.2.5</string>
+				</array>
+				<key>ServerName</key>
+				<string>extended.dns.mullvad.net</string>
+			</dict>
+			<key>OnDemandRules</key>
+			<array>
+				<dict>
+					<key>Action</key>
+					<string>Connect</string>
+					<key>InterfaceTypeMatch</key>
+					<string>WiFi</string>
+				</dict>
+				<dict>
+					<key>Action</key>
+					<string>Connect</string>
+					<key>InterfaceTypeMatch</key>
+					<string>Cellular</string>
+				</dict>
+				<dict>
+					<key>Action</key>
+					<string>Disconnect</string>
+				</dict>
+			</array>
+			<key>PayloadDescription</key>
+			<string>Configures device to use Mullvad Encrypted DNS with extended blocking (TLS) Encrypted DNS over TLS</string>
+			<key>PayloadDisplayName</key>
+			<string>Mullvad Encrypted DNS with extended blocking (TLS) DNS over TLS</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.dnsSettings.managed.2ce758c9-1068-4308-9ef3-3088b280061e</string>
+			<key>PayloadType</key>
+			<string>com.apple.dnsSettings.managed</string>
+			<key>PayloadUUID</key>
+			<string>2ce758c9-1068-4308-9ef3-3088b280061e</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>ProhibitDisablement</key>
+			<false/>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Adds different encrypted DNS configurations to Big Sur (or newer) and iOS 14 (or newer) based systems</string>
+	<key>PayloadDisplayName</key>
+	<string>Encrypted DNS (DoH, DoT)</string>
+	<key>PayloadIdentifier</key>
+	<string>com.notjakob.apple-dns.b8232f9a-c2c0-4412-af4a-21ec38b45fbe</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadScope</key>
+	<string>System</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>7E72993F-0CA4-4E40-BB17-4CD90C45A2C7</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
