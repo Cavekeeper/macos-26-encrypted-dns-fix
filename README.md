@@ -20,3 +20,8 @@ Falls du einen anderen Anbieter (z.B. Quad9 oder AdGuard) nutzt, öffne deine `.
 ```xml
 <key>PayloadScope</key>
 <string>System</string>
+```
+### Zusammenfassung der Änderungen
+* **PayloadScope**: Muss auf `System` gesetzt sein.
+* **Admin-Rechte**: Da es nun ein System-Profil ist, wird bei der Installation zwingend das Admin-Passwort oder Touch ID verlangt.
+* **Vermeidung von VPN-Konflikten**: Durch diesen Hack erkennt macOS, dass es sich um eine Netzwerkkonfiguration auf Systemebene handelt und nicht um einen fehlerhaften User-VPN-Tunnel.
