@@ -8,19 +8,20 @@ In macOS 26.2 schlägt die Installation herkömmlicher `.mobileconfig`-Profile o
 ## Der Fix
 Das Profil muss explizit den Geltungsbereich `System` deklarieren. 
 
-## Download & Installation
+## Download & Installation 🚀
 
-Wähle die passende Version für deine Bedürfnisse:
+Die einfachste Methode ist der Download der **signierten Version** über unsere Releases:
 
-### Option A: Signierte Datei (Empfohlen) 📥
-* **Ort:** `/signed/dnsforge-dot-fix.mobileconfig`
-* **Vorteil:** macOS zeigt beim Installieren "Verifiziert" an. Keine Warnung über unsignierte Profile.
-* **Download:** [Hier klicken, um zur signierten Datei zu gelangen](./signed/)
+👉 **[Neueste Version herunterladen (Releases)](https://github.com/Cavekeeper/macos-26-encrypted-dns-fix/releases/latest)**
 
-### Option B: Quellcode / Unsigniert 🛠️
-* **Ort:** `/code/dnsforge-unsigned.mobileconfig`
-* **Vorteil:** Du kannst den XML-Code im Editor prüfen oder manuell anpassen (z.B. für eigene Server).
-* **Download:** [Hier klicken, um den Code zu sehen](./code/)
+---
+
+### Alternative Optionen:
+
+| Version | Ort im Repo | Vorteil |
+| :--- | :--- | :--- |
+| **Signiert (Empfohlen)** | `/signed/` | Erscheint als "Verifiziert", kein Warnhinweis. |
+| **Unsigniert (Code)** | `/code/` | Transparent, ideal für eigene Anpassungen. |
 
 ## Warum signiert?
 Eine signierte Datei stellt sicher, dass das Profil nach dem Erstellen nicht mehr verändert wurde. Wenn du die Datei aus dem `code/` Ordner selbst speicherst, wird macOS dich darauf hinweisen, dass das Profil "Nicht signiert" ist. Das ist technisch kein Problem, erfordert aber einen zusätzlichen Klick bei der Installation.
